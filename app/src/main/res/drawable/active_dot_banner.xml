@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Larger blue circle -->
+    <item>
+        <shape android:shape="oval">
+            <padding
+                android:bottom="3dp"
+                android:left="3dp"
+                android:right="3dp"
+                android:top="3dp" />
+            <size
+                android:width="3dp"
+                android:height="3dp" />
+            <stroke
+                android:width="3dp"
+                android:color="@color/home_toolbar" />
+        </shape>
+    </item>
+ <!--<&#45;&#45;&#45;&#45;     Green circle in middle&ndash;&gt;-->
+    <item>
+        <shape android:shape="oval">
+            <padding
+                android:bottom="3dp"
+                android:left="3dp"
+                android:right="3dp"
+                android:top="3dp" />
+            <size
+                android:width="3dp"
+                android:height="3dp" />
+            <stroke
+                android:width="3dp"
+                android:color="@color/home_toolbar" />
+        </shape>
+    </item>
+     <!--Smaller red circle at front-->
+    <item>
+        <shape android:shape="oval">
+            <size
+                android:width="4dp"
+                android:height="4dp" />
+            <solid android:color="@color/home_toolbar" />
+        </shape>
+    </item>
+</layer-list>
