@@ -5,32 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cvContactUs"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:backgroundTint="@color/home_toolbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:shapeAppearance="@style/roundedCardView">
-
-        <ImageView
-            android:layout_width="@dimen/_26sdp"
-            android:layout_height="@dimen/_26sdp"
-            android:layout_marginVertical="@dimen/_15sdp"
-            android:layout_marginStart="@dimen/_8sdp"
-            android:src="@drawable/ic_arrow_back" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/poppins_medium"
-            android:text="Contact Us"
-            android:textColor="@color/white"
-            android:textSize="25sp" />
-    </com.google.android.material.card.MaterialCardView>
+    <include
+        android:id="@+id/contactToolbar"
+        layout="@layout/layout_contact_toolbar"/>
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nsvContact"
@@ -42,7 +19,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cvContactUs">
+        app:layout_constraintTop_toBottomOf="@+id/contactToolbar">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -306,7 +283,7 @@
 
 
 
-    <com.google.android.material.button.MaterialButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSubmit"
         style="@style/normalTextMedium"
         android:layout_width="0dp"
@@ -319,7 +296,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:textAllCaps="false"
-        android:backgroundTint="@color/home_toolbar"
+        android:backgroundTint="@null"
+        android:background="@drawable/btn_bg"
         android:layout_marginBottom="@dimen/_55sdp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

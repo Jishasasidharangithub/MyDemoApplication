@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/home_toolbar">
+    android:padding="@dimen/_10sdp"
+    android:background="@drawable/toolbar_bg">
 
     <ImageView
         android:id="@+id/ivMenu"

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    android:background="@drawable/toolbar_bg">
+
+    <TextView
+        android:id="@+id/tvMyProfile"
+        style="@style/largeTextBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Profile"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:text="Edit"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/tvMyProfile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvMyProfile" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivUser"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="2dp"
+        android:src="@drawable/ic_edit_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/home_toolbar" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            style="@style/mediumTextRegular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="User Name"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivUser" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            style="@style/smallTextRegular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="user@gmail.com"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvMyBooking"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintEnd_toStartOf="@+id/cvMyPayment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmail">
+
+            <ImageView
+                android:id="@+id/ivMyBooking"
+                android:layout_width="46dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_mybooking"
+                app:tint="@color/home_toolbar"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tvMyBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="My Booking"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/cvMyBooking"
+            app:layout_constraintStart_toStartOf="@+id/cvMyBooking"
+            app:layout_constraintTop_toBottomOf="@+id/cvMyBooking" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvMyPayment"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/cvMyBooking"
+            app:layout_constraintEnd_toStartOf="@+id/cvMySubscription"
+            app:layout_constraintStart_toEndOf="@+id/cvMyBooking"
+            app:layout_constraintTop_toTopOf="@+id/cvMyBooking">
+
+            <ImageView
+                android:id="@+id/ivProfileItem1"
+                android:layout_width="46dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_my_payment"
+                app:tint="@color/home_toolbar" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tvMyPaymet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="My Paymet"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/cvMyPayment"
+            app:layout_constraintStart_toStartOf="@+id/cvMyPayment"
+            app:layout_constraintTop_toBottomOf="@+id/cvMyPayment" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvMySubscription"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/cvMyPayment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cvMyPayment"
+            app:layout_constraintTop_toTopOf="@+id/cvMyPayment">
+
+            <ImageView
+                android:id="@+id/ivProfileItem2"
+                android:layout_width="46dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_subcription"
+                app:tint="@color/home_toolbar"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tvMySubscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="My Subscription"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/cvMySubscription"
+            app:layout_constraintStart_toStartOf="@+id/cvMySubscription"
+            app:layout_constraintTop_toBottomOf="@+id/cvMySubscription" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

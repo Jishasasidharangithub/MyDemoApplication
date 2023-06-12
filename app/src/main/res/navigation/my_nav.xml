@@ -26,12 +26,20 @@
         android:id="@+id/profileFragment"
         android:name="com.jisha.mydemoapplication.ui.fragment.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
     <fragment
         android:id="@+id/cartFragment"
         android:name="com.jisha.mydemoapplication.ui.fragment.CartFragment"
         android:label="fragment_cart"
         tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.jisha.mydemoapplication.ui.fragment.EditProfileFragment"
+        android:label="EditProfileFragment" />
 
 
 </navigation>

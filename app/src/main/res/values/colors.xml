@@ -9,8 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="home_toolbar">#2E3F9C</color>
     <color name="Grey">#999BA1A8</color>
+    <color name="DarkGrey">#9958595A</color>
     <color name="rippleColor">#1A0B3089</color>
     <color name="gray">#F9F9FC</color>
+    <color name="grey">#E3DEDE</color>
 
     <!--TEXT COLOR-->
     <color name="text_color">#171C2B</color>

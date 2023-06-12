@@ -57,6 +57,15 @@ dependencies {
 
     implementation 'com.github.qamarelsafadi:CurvedBottomNavigation:0.1.0'
 
+    implementation 'com.github.ertugrulkaragoz:SuperBottomBar:0.4'
+
+    //IMAGE PICKER
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+
+    //CIRCLE IMAGE VIEW
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

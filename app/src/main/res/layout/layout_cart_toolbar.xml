@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/_10sdp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cslToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/toolbar_bg">
+
+
+        <ImageView
+            android:id="@+id/ivArrowBack"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/largeTextBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivArrowBack"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton1"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/cart_number_bg"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="@+id/cslToolbar"
+        app:layout_constraintTop_toBottomOf="@+id/cslToolbar" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatButton1"
+        app:layout_constraintStart_toEndOf="@+id/appCompatButton1"
+        app:layout_constraintTop_toTopOf="@+id/appCompatButton1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton2"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:background="@drawable/cart_number_bg"
+        android:text="2"
+        app:layout_constraintStart_toEndOf="@+id/view1"
+        app:layout_constraintTop_toTopOf="@+id/appCompatButton1"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatButton1"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatButton2"
+        app:layout_constraintStart_toEndOf="@+id/appCompatButton2"
+        app:layout_constraintTop_toTopOf="@+id/appCompatButton2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton3"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:background="@drawable/cart_number_bg"
+        android:text="3"
+        app:layout_constraintStart_toEndOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/appCompatButton1"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatButton1"/>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatButton3"
+        app:layout_constraintStart_toEndOf="@+id/appCompatButton3"
+        app:layout_constraintTop_toTopOf="@+id/appCompatButton3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton4"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:background="@drawable/cart_number_bg"
+        android:text="4"
+        app:layout_constraintStart_toEndOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/appCompatButton1"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatButton1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton2"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
