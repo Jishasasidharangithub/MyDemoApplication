@@ -5,7 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import androidx.viewpager.widget.ViewPager
+import androidx.viewpager2.widget.ViewPager2
 import com.jisha.mydemoapplication.R
+import com.jisha.mydemoapplication.adapter.ScreenMovingAdapter
 import com.jisha.mydemoapplication.databinding.FragmentCartBinding
 import com.jisha.mydemoapplication.databinding.FragmentProfileBinding
 
@@ -23,10 +27,51 @@ class CartFragment : Fragment() {
         return binding?.root
     }
 
+    val fragmentList = arrayListOf<Fragment>(
+        ScreenOneFragment(),
+        ScreenTwoFragment(),
+        ScreenThreeFragment(),
+        ScreenFourFragment()
+    )
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val adapter = ScreenMovingAdapter(
+            fragmentList,
+            requireActivity().supportFragmentManager,
+            lifecycle
+        )
+
+        binding?.viewPager?.adapter = adapter
+
+        val tabLayout = binding?.carttoolbar
+        val viewPager = binding?.viewPager
+
+        init()
+        initButtonBackgrounds()
     }
+    private fun initButtonBackgrounds() {
+        val buttons = arrayOf(
+            binding?.carttoolbar?.appCompatButton1,
+            binding?.carttoolbar?.appCompatButton2,
+            binding?.carttoolbar?.appCompatButton3,
+            binding?.carttoolbar?.appCompatButton4
+        )
+
+        binding?.viewPager?.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+                for (i in buttons.indices) {
+                    val button = buttons[i]
+                    button?.isSelected = (i == position)
+                    button?.setBackgroundResource(if (i == position) R.drawable.selected_btn_bg_color else R.drawable.unselected_btn_bg_color)
+                }
+            }
+        })
+    }
+
     private fun init() {
         binding?.carttoolbar?.tvTitle?.text = "Cart"
     }
+
 }

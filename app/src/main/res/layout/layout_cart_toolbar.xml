@@ -47,6 +47,7 @@
         android:layout_marginTop="@dimen/_20sdp"
         android:background="@drawable/cart_number_bg"
         android:text="1"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@+id/cslToolbar"
         app:layout_constraintTop_toBottomOf="@+id/cslToolbar" />
 
@@ -67,6 +68,7 @@
         android:layout_marginStart="@dimen/_10sdp"
         android:background="@drawable/cart_number_bg"
         android:text="2"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/view1"
         app:layout_constraintTop_toTopOf="@+id/appCompatButton1"
         app:layout_constraintBottom_toBottomOf="@+id/appCompatButton1"/>
@@ -88,6 +90,7 @@
         android:layout_marginStart="@dimen/_10sdp"
         android:background="@drawable/cart_number_bg"
         android:text="3"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/view2"
         app:layout_constraintTop_toTopOf="@+id/appCompatButton1"
         app:layout_constraintBottom_toBottomOf="@+id/appCompatButton1"/>
@@ -109,6 +112,7 @@
         android:layout_marginStart="@dimen/_10sdp"
         android:background="@drawable/cart_number_bg"
         android:text="4"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/view3"
         app:layout_constraintTop_toTopOf="@+id/appCompatButton1"
         app:layout_constraintBottom_toBottomOf="@+id/appCompatButton1"/>
