@@ -7,11 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.jisha.mydemoapplication.R
-import com.jisha.mydemoapplication.adapter.HomeMainAdapter
+import com.jisha.mydemoapplication.adapter.home.HomeMainAdapter
 import com.jisha.mydemoapplication.databinding.FragmentHomeBinding
-import com.jisha.mydemoapplication.modelclass.HomeMainCategoryData
-import com.jisha.mydemoapplication.modelclass.HomeViewPagerItem
-import com.jisha.mydemoapplication.modelclass.ShopByCategoryItem
+import com.jisha.mydemoapplication.modelclass.home.HomeMainCategoryData
+import com.jisha.mydemoapplication.modelclass.home.HomeViewPagerItem
+import com.jisha.mydemoapplication.modelclass.home.ShopByCategoryItem
 
 class HomeFragment : Fragment() {
 

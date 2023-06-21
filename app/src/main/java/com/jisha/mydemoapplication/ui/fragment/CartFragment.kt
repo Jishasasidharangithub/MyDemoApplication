@@ -5,13 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
 import com.jisha.mydemoapplication.R
-import com.jisha.mydemoapplication.adapter.ScreenMovingAdapter
+import com.jisha.mydemoapplication.adapter.cart.ScreenMovingAdapter
 import com.jisha.mydemoapplication.databinding.FragmentCartBinding
-import com.jisha.mydemoapplication.databinding.FragmentProfileBinding
 
 class CartFragment : Fragment() {
 
@@ -20,7 +17,7 @@ class CartFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         binding = FragmentCartBinding.inflate(
             LayoutInflater.from(requireContext()), container, false
         )
@@ -44,9 +41,6 @@ class CartFragment : Fragment() {
         )
 
         binding?.viewPager?.adapter = adapter
-
-        val tabLayout = binding?.carttoolbar
-        val viewPager = binding?.viewPager
 
         init()
         initButtonBackgrounds()

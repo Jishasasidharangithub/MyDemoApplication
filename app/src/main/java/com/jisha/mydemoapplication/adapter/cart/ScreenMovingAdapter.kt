@@ -1,4 +1,4 @@
-package com.jisha.mydemoapplication.adapter
+package com.jisha.mydemoapplication.adapter.cart
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

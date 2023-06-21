@@ -1,10 +1,10 @@
-package com.jisha.mydemoapplication.adapter
+package com.jisha.mydemoapplication.adapter.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.jisha.mydemoapplication.databinding.ItemHomeViewpagerBinding
-import com.jisha.mydemoapplication.modelclass.HomeViewPagerItem
+import com.jisha.mydemoapplication.modelclass.home.HomeViewPagerItem
 
 class HomeViewPagerAdapter() :
     RecyclerView.Adapter<HomeViewPagerAdapter.HomeViewPagerViewHolder>() {

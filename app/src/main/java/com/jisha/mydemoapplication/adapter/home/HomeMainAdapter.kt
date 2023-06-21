@@ -1,4 +1,4 @@
-package com.jisha.mydemoapplication.adapter
+package com.jisha.mydemoapplication.adapter.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,10 +7,12 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.jisha.mydemoapplication.databinding.ItemHomeMainRcvBinding
 import com.jisha.mydemoapplication.databinding.LayoutHomeViewpagerBinding
-import com.jisha.mydemoapplication.modelclass.HomeMainCategoryData
+import com.jisha.mydemoapplication.modelclass.home.HomeMainCategoryData
 import com.jisha.mydemoapplication.viewholder.HomePageViewHolder
 
-class HomeMainAdapter(private val viewLifecycleOwner: LifecycleOwner) : ListAdapter<HomeMainCategoryData, HomePageViewHolder>(DiffUtilCallback())  {
+class HomeMainAdapter(private val viewLifecycleOwner: LifecycleOwner) : ListAdapter<HomeMainCategoryData, HomePageViewHolder>(
+    DiffUtilCallback()
+)  {
 
     companion object {
         const val VIEW_ONE = 1
@@ -19,7 +21,7 @@ class HomeMainAdapter(private val viewLifecycleOwner: LifecycleOwner) : ListAdap
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomePageViewHolder {
         return when (viewType) {
-            HomeMainAdapter.VIEW_ONE -> {
+            VIEW_ONE -> {
                 HomePageViewHolder.HomeBannerCategoryViewHolder(
                     LayoutHomeViewpagerBinding.inflate(
                         LayoutInflater.from(parent.context),
@@ -28,7 +30,7 @@ class HomeMainAdapter(private val viewLifecycleOwner: LifecycleOwner) : ListAdap
                     )
                 )
             }
-            HomeMainAdapter.VIEW_TWO -> {
+            VIEW_TWO -> {
                 HomePageViewHolder.HomeShopByCategoryViewHolder(
                     ItemHomeMainRcvBinding.inflate(
                         LayoutInflater.from(parent.context),

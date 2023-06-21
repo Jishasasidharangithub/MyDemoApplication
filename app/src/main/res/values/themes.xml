@@ -33,6 +33,13 @@
         <item name="colorControlHighlight">@color/rippleColor</item>
     </style>
 
+    <!--Circle Image View-->
+    <style name="CircleImageView">
+    <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20%</item>
+    </style>
+
+
 
     <!--FONT SIZE AND FONT FAMILY-->
     <style name="extraLargeTextBold">

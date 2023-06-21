@@ -1,4 +1,4 @@
-package com.jisha.mydemoapplication.modelclass
+package com.jisha.mydemoapplication.modelclass.home
 
 sealed class HomeMainCategoryData {
     class HomeBannerCategory(

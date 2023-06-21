@@ -65,6 +65,9 @@ dependencies {
     //CIRCLE IMAGE VIEW
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
+    //SWIPE DECORATOR
+    implementation 'it.xabaras.android:recyclerview-swipedecorator:1.4'
+
 
 
     testImplementation 'junit:junit:4.13.2'

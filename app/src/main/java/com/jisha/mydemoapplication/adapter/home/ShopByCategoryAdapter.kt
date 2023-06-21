@@ -1,10 +1,10 @@
-package com.jisha.mydemoapplication.adapter
+package com.jisha.mydemoapplication.adapter.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.jisha.mydemoapplication.databinding.ItemShopByCategoryBinding
-import com.jisha.mydemoapplication.modelclass.ShopByCategoryItem
+import com.jisha.mydemoapplication.modelclass.home.ShopByCategoryItem
 
 class ShopByCategoryAdapter () : RecyclerView.Adapter<ShopByCategoryAdapter.HomeShopByCategoryViewHolder>()  {
 

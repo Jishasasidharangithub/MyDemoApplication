@@ -10,11 +10,11 @@ import androidx.viewbinding.ViewBinding
 import androidx.viewpager2.widget.ViewPager2
 import coil.load
 import com.jisha.mydemoapplication.R
-import com.jisha.mydemoapplication.adapter.HomeViewPagerAdapter
-import com.jisha.mydemoapplication.adapter.ShopByCategoryAdapter
+import com.jisha.mydemoapplication.adapter.home.HomeViewPagerAdapter
+import com.jisha.mydemoapplication.adapter.home.ShopByCategoryAdapter
 import com.jisha.mydemoapplication.databinding.ItemHomeMainRcvBinding
 import com.jisha.mydemoapplication.databinding.LayoutHomeViewpagerBinding
-import com.jisha.mydemoapplication.modelclass.HomeMainCategoryData
+import com.jisha.mydemoapplication.modelclass.home.HomeMainCategoryData
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
