@@ -39,7 +39,11 @@
         <item name="cornerSize">20%</item>
     </style>
 
-
+    <!--RATING BAR-->
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/Grey</item>
+        <item name="colorControlActivated">@color/yellow</item>
+    </style>
 
     <!--FONT SIZE AND FONT FAMILY-->
     <style name="extraLargeTextBold">

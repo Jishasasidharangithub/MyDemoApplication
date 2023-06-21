@@ -10,6 +10,7 @@ import com.jisha.mydemoapplication.R
 import com.jisha.mydemoapplication.adapter.cart.CartMainAdapter
 import com.jisha.mydemoapplication.databinding.FragmentScreenOneBinding
 import com.jisha.mydemoapplication.modelclass.cart.CartMainCategoryData
+import com.jisha.mydemoapplication.modelclass.cart.CartSubCategoryItem
 import com.jisha.mydemoapplication.modelclass.cart.CartTopCategoryItem
 
 
@@ -59,8 +60,36 @@ class ScreenOneFragment : Fragment() {
                 0
             )
         )
+        val subList1 = listOf(
+            CartSubCategoryItem(
+                "AED 250",
+                R.drawable.watch,
+                "Watch"
+            ), CartSubCategoryItem(
+                "AED 250",
+                R.drawable.watch,
+                "Watch"
+            ), CartSubCategoryItem(
+                "AED 250",
+                R.drawable.watch,
+                "Watch"
+            ), CartSubCategoryItem(
+                "AED 250",
+                R.drawable.watch,
+                "Watch"
+            ), CartSubCategoryItem(
+                "AED 250",
+                R.drawable.watch,
+                "Watch"
+            ), CartSubCategoryItem(
+                "AED 250",
+                R.drawable.watch,
+                "Watch"
+            )
+        )
         val mainList = listOf(
             CartMainCategoryData.CartTopItem(1, subList),
+            CartMainCategoryData.CartSubItem(2, "SHOP BY CATEGORY",subList1),
         )
         cartMainAdapter.submitList(mainList)
     }
